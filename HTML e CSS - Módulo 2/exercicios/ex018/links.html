@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red; /*Todos os links vao ficar vermelhos*/
+            text-decoration: none;/*Tirendo o sublinhado dos links*/
+            font-weight: bold;/*Negrito*/
+        }
+        a:visited{
+            color: darkred; /*Os links visitados vão ficar vermehlo escuro*/
+        }
+        a:hover{
+            /*Aqui quando passamos o mouse no link ele fica sublinhado e preto*/
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            /*Aqui, quando clicarmos no link ele vai ficar amarelo*/
+            color: yellow;
+        }
+        a::before{
+            /*Depois de todos os link's vamos colocar uma seta pra esquerda*/
+            content: '⇒' ;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+
+        a::after{
+            /*Depois de todos os link's vamos colocar uma seta pra direita*/
+            content: '⇐'; 
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+        /*Aqui colocamos uma seta dupla antes e depois de todos os elementos da classe 'especial'.Depois colocamos um background-color para essa classe*/
+        .especial::before{
+            content: '⇒⇒' ;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+        .especial::after{
+            content: '⇐⇐'; 
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+        .especial{
+            background-color: rgba(255, 0, 0, 0.514);
+        }
+        
+    </style>
+</head>
+<body>
+    <!--No HTML, por padrão, quando colocamos um link em um site, se aquele site ja foi visitado o link fica violeta(roxo) e se não o link fica azul.-->
+
+
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="especial">Canal Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/">Site do Curso em Video</a></li>
+        <li><a href="www.naovisitado.com">Site não visitado</a></li>
+    </ul>
+</body>
+</html>

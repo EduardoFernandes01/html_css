@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>  
+    <h1>Inserindo Videos Hospedados Localmente</h1>
+    <p>Esse video &dArr; está hospedado no meu servidor:</p>
+
+    <!--Forma mais simples de colocar o video:-->
+    <h2>Video MP4</h2>
+    <video src="videos/meu-video.mp4" width="500" controls>Vídeo de Limoes</video>
+    <h2>Video M4V</h2>
+    <video src="videos/meu-video.m4v" width="500" controls>Video de Limoes</video>
+    <h2>Video OGV</h2>
+    <video src="videos/meu-video.ogv" width="500" controls>Video de Limoes</video>
+    <h2>Video webm</h2>
+    <video src="videos/meu-video.webm"width="500" controls >Video de Limoes</video>
+
+    <!--Forma mais recomendada para adicionar videos com diferentes formatos:-->
+
+    <h2>Todos os Formatos:</h2>
+
+    <video controls width="500" poster="imagens/limoes-capa.png">
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.m4v" type="video/mp4">
+        <source src="videos/meu-video.webm" type="video/webm">
+        <source src="videos/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de video</p>
+    </video>
+    <!--Assim como com o audio, temos os comando controls, que serve para fornecer os botões de pausa,volume,etc para o video-->
+    <!--Temos também o comando width que determina o tamanho da tela do video na pagina. E por fim o comando poster que serve para colocarmos uma imagem de thumb no video -->
+
+    <h1>Inserindo videos do Youtube</h1>
+    <!--Acessar o video no youtube, depois clicar em compartilhar, depois clicar em incorporar, copiar as linhas de html que foram geradas e coloca-las no html do seu site.-->
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--É possível também inserir videos de outras plataformas, como o vimeo(por exemplo), ou qlqr outra plataforma.-->
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Vamos criar um link</h1>
+    <!--A tag (a) é usada para criar as ancoras(Onde as url's dos sites que desejamos anexar ficam)-->
+    <h2>Link Externo</h2>
+    <a href="https://gustavoguanabara.github.io">Acesse esse perfil GitHub</a>
+    <p>Você pode acessar o <a href="">repositório público no Github</a></p>
+
+    <h2>Link de site em outra lingua</h2>
+    <!--Quando vamos anexar sites cujo o idioma principal não é pt-br usamos o hreflang dentro da tag (a) para indicarmos isso.Como vemos no exemplo abaixo-->
+
+    <p>Link para o site da w3School:
+        <a href="http://www.w3schools.com/html/" hreflang="en">Site da W3schools(em Inglês)
+        </a>
+    </p>
+
+    <!--Os link's podem ser ajustados para abrir uma nova página a partir do link fornecido ou para abrir aquele link ná página atual.Para isso usamos o (target) e especificamos a ação que queremos-->
+
+    <!--Com o comando _blank abrimos o link em uma página em braco-->
+    <h2>Link usando blank</h2>
+    <a href="https://gustavoguanabara.github.io" target="_blank">Usando o blank</a>
+    <!--Com o comando _self abrimos na pagina atual-->
+    <h2>Link usando self</h2>
+    <a href="https://gustavoguanabara.github.io" target="_self">Usando o self</a>
+
+    <!--Também podemos indicar qual a natureza do link. Se ele vai para a próxima pagina ou para a pagina anterior do site, ou indicar se ele vai para a página oficial do artigo citado ou se vai para um outro site que não faz parte do nosso site.
+    Para isso usamos os comando (rel) com as especificações next,prev,author ou external.-->
+
+    <!--O next não necessariamente vai para a próxima paginae a prev não necessariamente vai para a página anterior.Deve existir uma certa flexibilidade dentro do seu site-->
+    <h2>Comando Next</h2>
+    <p>Ir para a Página 2: <a href="pagina2.html" target="_self" rel="next">Próxima Página</a></p>
+    <h2>Comando Prev</h2>
+    <p>Ir para a Página Inicial:<a href="paginainicial.html" target="_self" rel="prev">Página Anterior</a></p>
+    <h2>Comando Author</h2>
+    <a href="http://www.fulanodetal.com" target="_self" rel="author">Pagina do Autor</a>
+    <h2>Comando External</h2>
+    <a href="http://gustavoguanabara.github.io" target="_blank" rel="external">Abrir github em outra janela</a>
+    <!--O comando nofollow é direcionado ao mecanismo de busca-->
+    <h2>Comando nofollow</h2>
+    <a href="http://gustavoguanabara.github.io" target="_blank" rel="nofollow">Abrir github em outra janela</a>
+
+    <!--Os 2 primeiros link's são o que chamamos de links internos, onde o visitante vai visitar outra página do mesmo site.Nesses links não é necessário indicar a url completa-->
+
+    <!--Já os últimos 3 são o que chamamos de links externos, onde o visitante vai para outro site. Nesses links é necessário indicar a URL completa,juntamente com o protocolo http://-->
+
+    <!--Abrindo uma Página que está em uma outra pasta-->
+    
+    <p>Voce também pode acessar a nossa pagina 3: <a href="noticias/pag003.html" target="_self" rel="next">Página 3</a></p>
+
+    <h2>Link para Download</h2>
+    <!--Para colocar link's para download também usamos a tag(a).Porém devemos especificar qual o nome do arquivo com o atributo (download) e qual o tipo de arquivo com o atributo(type).Como vemos no exemplo abaixo-->
+        
+    <ul>
+        <li>
+            <a href="arquivos/10-Ligações em toda parte.pdf" download="10-Ligações em toda parte.pdf" type="application/pdf">Baixe aqui o pdf desta Aula</a>
+        </li>
+        <li>
+            <a href="arquivos/10-Ligações em toda parte.zip" download="10-Ligações em toda parte.zip" type="application/zip">Baixe aqui o zip com pdf desta Aula</a>
+        </li>
+    </ul>
+    <!--Existem vários tipos de arquivos e suas respectivas especificações, como por exemplo: application/zip , text/html, video/mp4, imade/png-->
+
+</body>
+</html>

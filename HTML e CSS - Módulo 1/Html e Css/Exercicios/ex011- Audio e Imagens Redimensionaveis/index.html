@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens, Audios e Videos</title>
+</head>
+<body>
+        <h1>Imagens Flexíveis</h1>
+        <p>É importante em uma site ter imagens que se adequem a dimensão do site e caso a pagina seja redimensionado a imagem também deve ser. Para isso temos as tags picture e source:Veja a baixo &dArr; </p>
+
+        <!--Usamos o source para definir que: Caso a dimensão da pagina seja igual o inferior a 750px a imagem que será renderizada será a foto-p, caso esteja entre 750px e 1050px a imagem será a foto-m. E caso seja maior que isso a imagem renderizada será a padrão(que é a foto-g).Importante definir tanto o parametro responsável pela dimensao(media), quanto os parametros de qual será a imagem exibida(scrset) e de qual será o tipo dessa imagem(type)-->
+        <!--A ordem dos sources é importante. O source com tamanho menor vem 1o e assim por diante-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Foto G">
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Aprendendo a reproduzir audios:</p>
+    <!--A forma mais simples de colocar um audio em um site:-->
+    <audio src="audios/happy-mistake.mp3" controls autoplay></audio>
+    <!--Existem vários formatos de audio como: MP3, WAV, OGG. É importante adptar o audio para esses 3 formatos pois diferentes navegadores aceitam diferentes formatos-->
+
+    <!--Método mais coreto de adicionar audio: -->
+    <!--O wav é o formato mais pesado-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="audios/guanacast-33.mp3" type="audio/mpeg">
+        <source src="audios/guanacast-33.ogg" type="audio/ogg">
+        <source src="audios/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta reproduzir o auido. Mas aqui temos um link para você baixar esse audio: <a href="audios/guanacast-33.mp3">Link para Download do Audio</a> </p>
+    </audio>
+
+    <!--O atributo (preload) possui três especificações: auto(padrão) vai considerar que o site está carregado só depois de carregar todo o arquivo do audio; Metadata, vai carregar apenas alguma informações sobre o audio; e None, não vai carregar nenhuma informação sobre o audio até o usuário clicar play no audio-->
+
+    <!--O atributo autoplay serve para reproduzir automaticamente o audio assim que a pagina carregar-->
+
+    <!--O atributo controls é importante, pois ele que vai disponibilizar o botão de play, e outras funcionalidades. Sem ele o audio ficaria "transparente" e o usuario não conseguiria reproduzi-lo-->
+
+    <!--O atributo loop serve para quando o audio chegar ao fim ele recomeçar-->
+
+    
+
+
+</body>
+</html>

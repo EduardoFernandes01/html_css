@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /*Isso é uma configuração global das CSS.Foi usada aqui para que o degrade (to top) funcionasse*/
+            height: 100%;
+        }
+        body{
+            /*
+            background-image: linear-gradient(to right, white,blue);   
+            */
+            /*
+            background-image: linear-gradient(to right,#D1CA15,#1158DB); 
+            */
+            /*
+            background-image: linear-gradient(-45deg,#3198e2,#6d59c0,#b93590,#e33f5f,#fdd579);
+            */
+            /*
+            background-image: radial-gradient(circle,#3198e2,#6d59c0,#b93590,#e33f5f,#fdd579);
+            */
+
+            background-image: radial-gradient(circle,#3198e2 80%,#6d59c0,#b93590,#e33f5f,#fdd579);
+        }
+    </style>
+    <!--Com o background image colocamos um degrade na pagina. Usamo o atributo (to rigth) para idicar que o gradiante vai da esquerda PARA A DIREITA.De branco para azul.
+    Podemos usar também to left, to top ou to bottom dependendo de como queremos o degrade. Também podemos usar a notação em grau para definir o degrade, usando 90deg(equivalente a to right) por exemplo.-->
+    <!--Depois eu fiz meu próprio degrade-->
+    <!--Depois o degrade do Instagram-->
+    <!--Depois um gradiante circular-->
+    <!--Também é possivel colocar quantos por cento de cada cor vai ter o degrade, como visto 5º degrade-->
+
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

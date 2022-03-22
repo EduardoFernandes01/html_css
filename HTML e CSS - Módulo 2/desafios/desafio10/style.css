@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+/*Serve para colar as bordas da caixa na pagina do navegador*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    background-image: linear-gradient(to bottom,rgb(60, 215, 129),rgb(41, 145, 86),rgb(24, 82, 50));
+    block-size: auto;
+}
+header > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    block-size: auto;
+    text-shadow: 2px 2px 0px black;
+    
+}
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    block-size: auto;
+    text-shadow: 2px 2px 0px black;
+}
+header > nav{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    block-size: auto;
+}
+nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;/*Quando tira o mouse de cima demora 0.5 segundos pra sair do efeito*/
+}
+nav > a:hover{
+    text-decoration: underline;
+    background-color: rgba(60, 215, 130, 0.3);
+}
+main{
+    background-color: rgb(130, 217, 160);
+    block-size: auto;
+    margin: auto;
+    padding: 1px;
+    
+
+   
+}
+.conteudo_princ{
+    background-color: white;
+    width: 63%;
+    margin: auto;
+    position: relative;
+    padding: 1px;
+    block-size: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    max-width: 800px;
+    min-width: 320px;
+}
+article{
+    padding: 20px;
+    block-size: auto; 
+    text-align: center; 
+}
+article > h1{
+    font-family: 'android';
+    color: rgb(59, 115, 84);
+    font-size: 1.5em;
+    text-align: left;
+}
+article > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 25px; 
+    line-height: 2em;
+}
+p > a{
+    text-decoration: none;
+}
+.pa_destaque{
+    color: rgb(73, 125, 97);
+    font-weight: bold;
+}
+h2{
+    background-image: linear-gradient(to right, rgb(185, 225, 203),white);
+    font-family: 'android';
+    color: rgb(59, 115, 84);
+    font-size: 1.2em;
+    text-align: left;
+}
+
+article > source{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*Isso aqui da responsividade as img. Para ela n ficar saindo fora das caixas*/
+img{
+    width: 100%;
+}
+article > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+article > img.pequena{
+    max-width: 350px;
+}
+section#video{
+    background-color: rgb(27, 89, 54);
+    min-height: 350px;
+    max-height: 500px;
+}
+section > iframe{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+
+}
+#ultima_sec{
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+section > aside{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 25px;
+    padding: 20px;
+}
+#ultimo_art{
+    border-radius: 10px;
+    background-color: rgb(197, 235, 214);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+}
+article > h3{
+    background-color: rgb(47, 168, 102);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.cont_ult_art{
+    padding: 10px;
+    block-size: auto;
+}
+article > ul{
+    padding-left: 20px;
+    list-style-position: inside;/*Tras a bolinha da lista pra dentro do aside*/
+    columns: 2; /*Divide a lista em 2 colunas*/
+    list-style-type: '\2714\00A0\00A0';/*Muda a bolinha do check pelo emoji escolhido(\2714). O \00A0\00A0 da dois espaços entre o emoji e o texto*/
+}
+footer{
+    background-color: rgb(27, 89, 54);
+    padding: 5px;
+    color: white;
+    text-align: center;  
+}

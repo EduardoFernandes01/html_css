@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é um comando em JavaScript</p>
+    <!--A tag code deixa o texto com o mesmo espaço para cada caracter-->
+
+    <pre>
+        <code>
+    num = int(input('Digite um Numero:'))
+    if ( num%2 == 0 ){
+        print(f'O número {num} é par')
+    }
+    else{
+        print(f'O número {num} é impar')
+    }
+    print('Fim do Programa!')
+        </code>
+    </pre>
+
+    <!--A tag (pre) faz com o texto inserido respeite as regras de indentação-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>ele não é maluco</q></p>
+    <!--A tag q serve para identificar sitações, coloca o texto entre aspas-->
+    
+    <h2>Citações Complexas</h2>
+    <p>Segundo Jack Sparrel: </p>
+    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis doloremque delectus molestiae vel voluptatem eaque iure, aspernatur necessitatibus omnis quasi illum repudiandae explicabo ipsa consectetur esse obcaecati animi laudantium.</blockquote>
+    <!--A tag blockquote também serve para identificar citações.Escolher entre (blockquote) ou (q) conforme for a necessidade-->
+
+    <!--O blockquote tembém permite colocar um link associado a citação,assim:-->
+    <blockquote cite="colocar link aqui">...</blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <!--O comando abbr serve para acrescentar uma descrição sobre uma abreviação.Quando coloca o mouse em cima da abreviação e mostrado o que ela siginifica-->
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML</bdo></p>
+
+    <!--O comando bdo serve para inverter o texto dentro dele-->
+
+</body>
+</html>

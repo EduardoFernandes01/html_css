@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+Em HTML usamos o id e no CSS usamos a # (são equivalentes)
+Em HTML usamos class e no CSS usamos .
+
+ID é usado para identificar um unico elemento(tag). Não é recomendado usar o mesmo id em diferentes tag's.
+
+Já o class é usado para: 1º criamos uma classe(com o nome que quisermos) e depois colocamos quantas tag's que quisermos nessa classe.
+Podemos colocar tag's diferentes, como h1,h2 e p com a mesma classe.
+
+Também podemos usar id e class em uma mesma tag. O ID prevalece sobre a classe se houver conflito.
+
+*/
+
+body{
+    background-color: rgb(205, 255, 240);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: rgb(4, 109, 0);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white
+}
+/*Podemos colocar h1#principal ou apenas #principal*/
+
+h2{
+    color: rgb(73, 109, 71);
+}
+
+.basico{
+    color: rgba(0, 128, 0, 0.836);
+}
+h2.intermediario{
+    color: rgba(128, 128, 0, 0.836);
+}
+.avançado{
+    color: rgb(128, 0, 0,0.836);
+}
+
+.destaque{
+    background-image: linear-gradient(to right,yellow,rgb(255, 255, 255));
+}

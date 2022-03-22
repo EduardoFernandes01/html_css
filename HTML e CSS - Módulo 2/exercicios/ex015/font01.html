@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+          /*  font-family: 'Courier New'; /*Courier é uma fonte serifada e monoespaçado*/
+           font-family: Arial, Helvetica, sans-serif;
+           /*No fonte acima colocamos 3 tipos diferentes de fonte(arieal. helvetica e sans-serif), porque caso o navegador não tenha uma das fontes ele recorre a outra fonte.Isso é chamado de Fonte de Segurança*/
+           /*Para saber quais são as combinações de fontes de segurança pesquisar no google(CSS web safe font combination) o site do w3school é recomendado.Mas o VSCode também sugere algumas safes combinations*/
+
+           /*Existem também as fontes genericas como: sans-serif,serif,monospace. Com elas o navegador escolhe a fonte que ele tem que segue o tipo de fonte que foi pedido.Por exemplo, se colocar sans-serif o navegador vai escolher alguma fonte que ele possua que seja sem serifa.*/
+
+            /*TAMANHO DE FONTES*/
+            /*Medidas Absolutas
+            cm,
+            mm,
+            in(polegada),
+            px(pixel),
+            pt(ponto),
+            pc.
+            */
+           /*Medidas Relativas
+            em(relativa ao tamanho atual da fonte), ex(altura x de uma fonte),
+           rem(relativa a fonte configurada no body),
+           vw(em relação a largura da tela),
+           vh(em relação a altura da tela),
+           %(porcentagem).
+           */
+
+            /*Usar de preferencia em ou px
+            16px normalmente é equivalente a 1em*/
+
+            font-size: 2em;
+
+
+            /*Peso(weight) das Fontes*/
+            /*Nomes Literais: lighter-normal-bold-bolder. Do mais fino ao mais robusto*/
+
+            /* font-weight:normal */
+
+            /*Nomes Numéricos: 100(lighter),200,300,400(normal),500,...,900*/
+
+           /* font-weight: 100;*/
+
+            /*Estilos: italic,normal,oblique,...*/
+
+            /* font-style: italic; */
+
+            /*Decorações no Texto: sublinhado,...*/
+
+            /* text-decoration: underline; */
+            /* text-decoration: overline; */
+
+            /*Shothand font: Colocando todas as configurações de fontes em uma mesma linha.*/
+            /* font: font-style font-weight font-size font-family */
+
+            font: italic bold 2em Arial, sans-serif
+
+        }
+        h2{
+            /*No h2 somente o texto não será em italico*/
+           font: bold 2em Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora et nam voluptatem veniam. Non accusantium harum porro eius, saepe ipsum fugit, aperiam sequi debitis expedita iusto est, placeat quam ab.  
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint ipsa, inventore aspernatur deserunt officia magni delectus voluptatem reiciendis aut cum quis, fugit praesentium perspiciatis itaque hic pariatur? Nihil, doloremque?</p>
+    <h2>Subtitulo do Exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, laudantium! Expedita, architecto ea excepturi eligendi exercitationem iste ipsum beatae reprehenderit, voluptatum aperiam numquam enim, tempora magni esse error qui! Ipsam?</p>
+</body>
+</html>

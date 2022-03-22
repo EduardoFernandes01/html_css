@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            /*Sombra Interna*/
+
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.555);
+
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            /* box-shadow: (deslocamento_horizontal) (deslocamento_vertical) (espalhamento) (spread(opcional))  (cor)*/
+            
+        
+        
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*A border pode ser configurada com um valor pros 4 cantos*/
+            border-radius: 20px;
+            /*Ou um valor pra cada canto. Na ordem: top-left,top-right,bottom-right e bottom-left*/
+            border-radius: 10px 20px 30px 40px;
+            /*Ou a configuração dupla.Na ordem: top-left bottom-right , top-right bottom-left*/
+            border-radius: 10px 40px;
+
+
+
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(189, 188, 188);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px 1px black;
+        }
+    </style>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>Meu Site</h1>
+        <!--Menu de Navegação-->
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <!--Conteúdo Principal-->
+    <main>
+        <!--Nenhuma dessas tag's precisam necessariamente estar uma dentro da outra.-->
+
+        <!--Seções-->
+        <section id="assuntos">
+            <p>Esportes Politicas Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <!--Artigos-->
+            <article>
+                <h2>Noticias do Brasil hoje:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum accusamus ratione quas ex assumenda repellendus quidem architecto omnis necessitatibus sequi, earum atque quae, exercitationem vitae culpa aut eius voluptate inventore.</p>
+                <!--Conteúdo periférico do artigo-->
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        
+
+        </section>
+
+    </main>
+    <!--Rodapé-->
+    <hr>
+    <footer>Desenvolvido por mim memso</footer>
+
+    <div id="bola">
+
+    </div>
+
+</body>
+</html>

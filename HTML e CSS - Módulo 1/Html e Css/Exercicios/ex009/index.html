@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <!--A tag ol é usada para listas ordenadas. É possível especificar que tipo de ordem(1,2,3,4 ou a,b,c,d) será usada. No caso default será usado a ordem(1,2,3,4)-->
+    <!--E a tag li sao os itens de lista. não é preciso fechar o li com /li, é opcional-->
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar Café
+        <li>Escovar os Dentes
+        <li>Lavar Roupa
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <!--A taga ul é usada para listas não ordenadas. Também podemos especificar o tipo de marcadores para essa list.disc - bolinha preta
+    circle - circulo
+    square - quadrado
+    O padrão é disc, caso n seja especificado.-->
+    <ul type="square">
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar Café
+        <li>Escovar os Dentes
+        <li>Lavar Roupa
+        </ul>
+    <h2>Juntando listas</h2>
+    <h3>Minhas Linguagens Favoritas</h3>
+    <!--Juntando ol com ol-->
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <!--Esse comando start inicia a contagem do 5º elemento-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <!--Juntando ol com ul-->
+    <h3>Meus Jogos Favoritos</h3>
+    <ol>
+        <li>Nitendo</li>
+        <ul>
+            <li>Mario</li>
+            <li>NinjaGaiden</li>
+        </ul>
+        <li>Super Nitendo</li>
+        <ul>
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>God of War</li>
+            <li>GTA</li>
+        </ul>
+
+    </ol>
+ <!--É possível colocar quantas listas forem necessárias, uma dentro da outra, ou listas ol com ul, etc. Conforme for a necessidade -->
+
+    <h2>Listas de Definições</h2>
+    <!-- Nas Listas de Definição temos o termo e o siginificado-->
+     
+    <!--Para iniciarmos a lista de definição usamos a tag dl(definition lista). Dentro dessa tag temos as tag's dt(termo de definição) e dd(descrição de definição)-->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação para a Criação de Site's</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Marcação para a Criação de Design de um Site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de Programação para a interatividade de um Site</dd>
+    </dl>
+</body>
+</html>

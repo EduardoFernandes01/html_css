@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes e Pseudo-Elementos</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = elemento filho(É o elemento que está dentro de um elemento).
+        
+        */
+
+
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            border: 5px solid rgb(0, 0, 0);
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        /*A pseudo-classes são relacionadas ao estado(ativo,marcado,habilitado) de um elemento.Usamos : para simbolizar as pseudo-classes*/
+
+        div:hover{
+            background-color: yellow;
+        }
+        /*Acima foi feita uma configuração de estado.Usamos a pseudo-classe 'hover' na tag div*/
+
+    </style>
+</head>
+<body>
+    <!--DIV é uma tag que ocupa uma linha. Mas com CSS podemos ajustar quanto ela vai ocupar.-->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <br><br><hr>
+
+    <a href="hover1.html">Próxima Página</a>
+
+    <!--Temos também os pseudo-elementos. Funciona em classes , id's, elementos. Eles mechem no conteúdo do elemento.Eles são representados em CSS por :: .Exemplo de pseudo-elementos no arquivo links.html  -->
+
+    <a href="links.html">Aqui tem tb exemplos de pseudo-elementos</a>
+
+</body>
+</html>
